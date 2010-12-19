@@ -2,7 +2,7 @@
 
 Summary:	A JSON implementation in pure Ruby
 Name:		rubygem-%{oname}
-Version:	1.2.4
+Version:	1.4.6
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Development/Ruby
@@ -14,7 +14,7 @@ Requires:	ruby
 BuildArch:	noarch
 
 %description
-This is a implementation of the JSON specification according to RFC 4627
+This is an implementation of the JSON specification according to RFC 4627
 (http://www.ietf.org/rfc/rfc4627.txt) written in pure ruby.
 
 %prep
