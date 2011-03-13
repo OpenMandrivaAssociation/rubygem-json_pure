@@ -5,7 +5,7 @@ Summary:	JSON Implementation for Ruby
 Name:		rubygem-%{rbname}
 
 Version:	1.5.1
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+
 URL:		http://flori.github.com/json
@@ -33,13 +33,12 @@ Documents, RDoc & RI documentation for %{name}.
 
 %install
 %gem_install
+rm -rf %{buildroot}%{_bindir}
 
 %clean
 rm -rf %{buildroot}
 
 %files
-%{_bindir}/edit_json.rb
-%{_bindir}/prettify_json.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/*.rb
