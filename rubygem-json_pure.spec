@@ -2,7 +2,7 @@
 
 Summary:	A JSON implementation in pure Ruby
 Name:		rubygem-%{oname}
-Version:	1.4.6
+Version:	1.5.1
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Development/Ruby
