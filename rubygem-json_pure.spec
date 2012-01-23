@@ -3,8 +3,8 @@
 Summary:	JSON Implementation for Ruby
 Name:		rubygem-%{rbname}
 
-Version:	1.5.1
-Release:	2
+Version:	1.6.5
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+
 URL:		http://flori.github.com/json
@@ -34,41 +34,28 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_install
 rm -rf %{buildroot}%{_bindir}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/*.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/data
-%{ruby_gemdir}/gems/%{rbname}-%{version}/data/*.html
-%{ruby_gemdir}/gems/%{rbname}-%{version}/data/*.js
-%{ruby_gemdir}/gems/%{rbname}-%{version}/data/*.json
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/java
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/java/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/java/lib/*.jar
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/*.xpm
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/add
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/add/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/pure
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/pure/*.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/tools
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/add
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/pure
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/ext
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/*.rb
 %{ruby_gemdir}/gems/%{rbname}-%{version}/tools/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/data/*.*
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/add/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/pure/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/json/ext/.keep
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README.*
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/tests
 %{ruby_gemdir}/gems/%{rbname}-%{version}/tests/*
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/benchmarks
 %{ruby_gemdir}/gems/%{rbname}-%{version}/benchmarks/*
-
-%changelog
-* Sun Mar 13 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.5.1-1
-- Initial package
