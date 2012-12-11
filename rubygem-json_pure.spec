@@ -59,3 +59,44 @@ rm -rf %{buildroot}%{_bindir}
 %{ruby_gemdir}/gems/%{rbname}-%{version}/tests/*
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/benchmarks
 %{ruby_gemdir}/gems/%{rbname}-%{version}/benchmarks/*
+
+
+%changelog
+* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.6.5-2
++ Revision: 774161
+- mass rebuild of ruby packages against ruby 1.9.1
+
+* Mon Jan 23 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.6.5-1
++ Revision: 766957
+- version update 1.6.5
+
+  + Andrey Smirnov <asmirnov@mandriva.org>
+    - rpmlint warning
+
+* Sun Mar 13 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.5.1-2
++ Revision: 644356
+- fix file conflicts with rubygem-json
+- regenerate spec with gem2rpm5
+- new release: 1.5.1
+
+* Sun Dec 19 2010 Rémy Clouard <shikamaru@mandriva.org> 1.4.6-1mdv2011.0
++ Revision: 623081
+- Bump release
+- new version 1.4.6
+- fix minor typo in %%description
+
+* Thu Nov 04 2010 Rémy Clouard <shikamaru@mandriva.org> 1.2.4-1mdv2011.0
++ Revision: 593116
+- bump release
+
+* Fri Sep 17 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.2.0-2mdv2011.0
++ Revision: 579200
+- rebuild for automatic provides
+
+* Wed Feb 03 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.2.0-1mdv2010.1
++ Revision: 500331
+- import rubygem-json_pure
+
+
+* Mon Feb  3 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.2.0-1
+- initial release
