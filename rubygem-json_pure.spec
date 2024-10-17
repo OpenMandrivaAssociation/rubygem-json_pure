@@ -7,7 +7,7 @@ Version:	1.6.5
 Release:	5
 Group:		Development/Ruby
 License:	GPLv2+
-URL:		http://flori.github.com/json
+URL:		https://flori.github.com/json
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
